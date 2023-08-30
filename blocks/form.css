@@ -6,13 +6,14 @@
 .form__input {
   max-width: 385px;
   width: 100%;
+  display: block;
   box-sizing: border-box;
   font: inherit;
   border-radius: 4px;
   background-color: #ffffff;
   padding: 19px 20px;
   border: 1px solid #838383;
-  margin-bottom: 32px;
+  margin-top: 8px;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -33,7 +34,7 @@
 }
 
 .form__fieldset {
-  margin: 0 0 32px;
+  margin: 0;
   width: 100%;
   box-sizing: border-box;
   padding: 0;
@@ -44,14 +45,16 @@
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-
+  margin-bottom: 32px;
+  display: block;
   line-height: 20px;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: flex-start;
-  row-gap: 8px;
+  row-gap: 8px; */
 }
-.form__label-checkbox {
+.form__label_type_checkbox {
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
@@ -60,10 +63,11 @@
 .form__button {
   box-sizing: border-box;
   border: none;
-  margin: 0;
-  padding: 20px 30px;
+  margin-bottom: 32px;
+  padding: 0;
   color: #ffffff;
   cursor: pointer;
+  transition: opacity 0.3s linear;
 }
 
 .form__button:hover {
@@ -73,7 +77,7 @@
 .form__button {
   box-sizing: border-box;
   border: none;
-  margin: 0;
+  margin-bottom: 32px;
   padding: 20px 30px;
   color: #ffffff;
   cursor: pointer;
